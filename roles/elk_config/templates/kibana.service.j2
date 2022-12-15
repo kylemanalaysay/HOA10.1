@@ -1,0 +1,10 @@
+[Unit]
+Description=Kibana service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/data/{{ kibana }}/bin/kibana
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+---
+# tasks file for setup_ELK
+- include: install_java.yml
+- include: elasticsearch.yml
+- include: logstash.yml
+- include: kibana.yml
+- include: metricbeat.yml
+- include: filebeat.yml
+- include: grafana.yml
+- name: Get my public IP
+  ipify_facts:
+  register: public_ip
+- name: public IP Address
+  debug: msg="{{ public_ip }}"

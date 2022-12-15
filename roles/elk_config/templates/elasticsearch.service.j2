@@ -1,0 +1,14 @@
+[Unit]
+Description=Elasticsearch service
+After=network.target
+
+[Service]
+Type=simple
+LimitNOFILE=65536
+LimitMEMLOCK=infinity
+User=elasticsearch
+Group=elasticsearch
+ExecStart=/data/elasticsearch-8.4.3/bin/elasticsearch
+
+[Install]
+WantedBy=multi-user.target
