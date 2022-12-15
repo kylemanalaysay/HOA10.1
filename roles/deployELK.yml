@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  become_user: root
+  become_method: sudo
+  connection: ssh
+  gather_facts: true
+  roles:
+    - elk_config
