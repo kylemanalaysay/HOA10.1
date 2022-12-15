@@ -1,0 +1,7 @@
+---
+
+elastic: "elasticsearch-8.4.3-linux-x86_64"
+kibana: "kibana-8.4.3"
+logstash: "logstash-8.4.3-linux-x86_64"
+metricbeat: "metricbeat-8.4.3"
+filebeat: "filebeat-8.4.3"
